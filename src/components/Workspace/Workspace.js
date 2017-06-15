@@ -6,13 +6,16 @@ import Customer from './Customer/Customer';
 import CreateCustomer from './CreateCustomer/CreateCustomer';
 
 function Workspace( { loading, initialLoad, creating } ) {
+  console.log('Hello!')
   return (
     <div id="Workspace__container">
       {
+        
         creating
         ?
           <CreateCustomer />
         :
+         
           initialLoad
           ?
             <div>

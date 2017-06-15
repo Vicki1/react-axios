@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './CreateCustomer.css';
+import {dispatchCreateCustomer} from '../../../services/workspaceService';
 
 export default class CreateCustomer extends Component {
   constructor() {
@@ -30,6 +31,7 @@ export default class CreateCustomer extends Component {
       status: 'New Customer',
       log: ''
     }
+     dispatchCreateCustomer(customer);
   }
   
   render() {

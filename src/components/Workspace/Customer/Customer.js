@@ -8,6 +8,7 @@ import RepairLog from './RepairLog/RepairLog';
 import RemoveCustomer from './RemoveCustomer/RemoveCustomer';
 
 function Customer( { id, first, last, email, phone, status, log } ) {
+  console.log('Customer Component', first, last)
   return (
     <div id="Customer__container">
       <Information id={ id } first={ first } last={ last } email={ email } phone={ phone } />
